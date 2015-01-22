@@ -4104,8 +4104,8 @@ for the logo on the board is tSilk.</description>
 <sheets>
 <sheet>
 <plain>
-<text x="350.52" y="7.62" size="5.08" layer="91">M. Hord</text>
-<text x="420.37" y="6.096" size="3.81" layer="91">v01</text>
+<text x="350.52" y="7.62" size="5.08" layer="94">M. Hord</text>
+<text x="420.37" y="6.096" size="3.81" layer="94">v01</text>
 </plain>
 <instances>
 <instance part="JP1" gate="G$1" x="22.86" y="233.68" smashed="yes">
