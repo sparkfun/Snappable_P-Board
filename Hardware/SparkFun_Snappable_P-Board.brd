@@ -11,15 +11,15 @@
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -34,10 +34,10 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -64,6 +64,8 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -97,6 +99,7 @@
 <layer number="126" name="_bNames" color="7" fill="1" visible="no" active="no"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="no"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="no"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="no"/>
@@ -132,11 +135,19 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="no" active="no"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="no"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -843,12 +854,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
 <package name="CREATIVE_COMMONS">
-<text x="-20.32" y="5.08" size="1.778" layer="51">Released under the Creative Commons Attribution Share-Alike 4.0 License</text>
-<text x="0" y="2.54" size="1.778" layer="51"> https://creativecommons.org/licenses/by-sa/4.0/</text>
-<text x="11.43" y="0" size="1.778" layer="51">Designed by:</text>
+<text x="-20.32" y="5.08" size="1.778" layer="51" font="vector">Released under the Creative Commons Attribution Share-Alike 4.0 License</text>
+<text x="0" y="2.54" size="1.778" layer="51" font="vector"> https://creativecommons.org/licenses/by-sa/4.0/</text>
+<text x="11.43" y="0" size="1.778" layer="51" font="vector">Designed by:</text>
 </package>
 <package name="SFE_LOGO_FLAME_.05">
-<polygon width="0" layer="21">
+<polygon width="0.0254" layer="21">
 <vertex x="1.05" y="1.58"/>
 <vertex x="1.05" y="1.57"/>
 <vertex x="1.05" y="1.56"/>
@@ -1501,379 +1512,379 @@ design rules under a new name.
 </pass>
 </autorouter>
 <elements>
-<element name="JP1" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="64.77">
+<element name="JP1" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="64.77">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="64.77" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP2" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="62.23">
+<element name="JP2" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="62.23">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="62.23" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP3" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="59.69">
+<element name="JP3" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="59.69">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="59.69" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP4" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="57.15">
+<element name="JP4" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="57.15">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="57.15" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP5" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="54.61">
+<element name="JP5" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="54.61">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="54.61" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP6" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="52.07">
+<element name="JP6" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="52.07">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="52.07" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP7" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="49.53">
+<element name="JP7" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="49.53">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="49.53" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP8" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="46.99">
+<element name="JP8" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="46.99">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="46.99" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP9" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="44.45">
+<element name="JP9" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="44.45">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="44.45" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP10" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="41.91">
+<element name="JP10" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="41.91">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="41.91" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP11" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="39.37">
+<element name="JP11" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="39.37">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="39.37" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP12" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="36.83">
+<element name="JP12" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="36.83">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="36.83" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP13" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="34.29">
+<element name="JP13" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="34.29">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="34.29" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP14" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="31.75">
+<element name="JP14" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="31.75">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="31.75" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP15" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="29.21">
+<element name="JP15" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="29.21">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="29.21" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP16" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="26.67">
+<element name="JP16" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="26.67">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="26.67" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP17" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="24.13">
+<element name="JP17" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="24.13">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="24.13" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP18" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="21.59">
+<element name="JP18" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="21.59">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="21.59" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP19" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="19.05">
+<element name="JP19" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="19.05">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="19.05" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP20" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="16.51">
+<element name="JP20" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="16.51">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="16.51" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP21" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="13.97">
+<element name="JP21" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="13.97">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="13.97" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP22" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="11.43">
+<element name="JP22" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="11.43">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="11.43" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP23" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="8.89">
+<element name="JP23" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="8.89">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="8.89" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP24" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="6.35">
+<element name="JP24" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="6.35">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="6.35" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP25" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="3.81" y="3.81">
+<element name="JP25" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="3.81" y="3.81">
 <attribute name="PROD_ID" value="CONN-11563" x="3.81" y="3.81" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP26" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="64.77">
+<element name="JP26" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="64.77">
 <attribute name="PROD_ID" value="CONN-11563" x="29.21" y="64.77" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP27" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="62.23">
+<element name="JP27" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="62.23">
 <attribute name="PROD_ID" value="CONN-11563" x="-1.27" y="52.07" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP28" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="59.69">
+<element name="JP28" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="59.69">
 <attribute name="PROD_ID" value="CONN-11563" x="29.21" y="49.53" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP29" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="57.15">
+<element name="JP29" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="57.15">
 <attribute name="PROD_ID" value="CONN-11563" x="-1.27" y="36.83" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP30" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="54.61">
+<element name="JP30" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="54.61">
 <attribute name="PROD_ID" value="CONN-11563" x="29.21" y="34.29" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP31" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="52.07">
+<element name="JP31" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="52.07">
 <attribute name="PROD_ID" value="CONN-11563" x="-1.27" y="21.59" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP32" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="49.53">
+<element name="JP32" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="49.53">
 <attribute name="PROD_ID" value="CONN-11563" x="29.21" y="19.05" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP33" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="46.99">
+<element name="JP33" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="46.99">
 <attribute name="PROD_ID" value="CONN-11563" x="-1.27" y="6.35" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP34" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="44.45">
+<element name="JP34" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="44.45">
 <attribute name="PROD_ID" value="CONN-11563" x="29.21" y="3.81" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP35" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="41.91">
+<element name="JP35" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="41.91">
 <attribute name="PROD_ID" value="CONN-11563" x="-1.27" y="-8.89" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP36" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="39.37">
+<element name="JP36" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="39.37">
 <attribute name="PROD_ID" value="CONN-11563" x="29.21" y="-11.43" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP37" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="36.83">
+<element name="JP37" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="36.83">
 <attribute name="PROD_ID" value="CONN-11563" x="-1.27" y="-24.13" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP38" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="34.29">
+<element name="JP38" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="34.29">
 <attribute name="PROD_ID" value="CONN-11563" x="29.21" y="-26.67" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP39" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="31.75">
+<element name="JP39" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="31.75">
 <attribute name="PROD_ID" value="CONN-11563" x="-1.27" y="-39.37" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP40" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="29.21">
+<element name="JP40" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="29.21">
 <attribute name="PROD_ID" value="CONN-11563" x="29.21" y="-41.91" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP41" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="26.67">
+<element name="JP41" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="26.67">
 <attribute name="PROD_ID" value="CONN-11563" x="-1.27" y="-54.61" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP42" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="24.13">
+<element name="JP42" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="24.13">
 <attribute name="PROD_ID" value="CONN-11563" x="29.21" y="-57.15" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP43" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="21.59">
+<element name="JP43" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="21.59">
 <attribute name="PROD_ID" value="CONN-11563" x="-1.27" y="-69.85" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP44" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="19.05">
+<element name="JP44" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="19.05">
 <attribute name="PROD_ID" value="CONN-11563" x="29.21" y="-72.39" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP45" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="16.51">
+<element name="JP45" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="16.51">
 <attribute name="PROD_ID" value="CONN-11563" x="-1.27" y="-85.09" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP46" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="13.97">
+<element name="JP46" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="13.97">
 <attribute name="PROD_ID" value="CONN-11563" x="29.21" y="-87.63" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP47" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="11.43">
+<element name="JP47" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="11.43">
 <attribute name="PROD_ID" value="CONN-11563" x="-1.27" y="-100.33" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP48" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="8.89">
+<element name="JP48" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="8.89">
 <attribute name="PROD_ID" value="CONN-11563" x="29.21" y="-102.87" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP49" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="6.35">
+<element name="JP49" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="6.35">
 <attribute name="PROD_ID" value="CONN-11563" x="-1.27" y="-115.57" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP50" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="29.21" y="3.81">
+<element name="JP50" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="29.21" y="3.81">
 <attribute name="PROD_ID" value="CONN-11563" x="29.21" y="-118.11" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP51" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="64.77">
+<element name="JP51" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="64.77">
 <attribute name="PROD_ID" value="CONN-11563" x="54.61" y="64.77" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP52" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="62.23">
+<element name="JP52" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="62.23">
 <attribute name="PROD_ID" value="CONN-11563" x="26.67" y="54.61" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP53" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="59.69">
+<element name="JP53" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="59.69">
 <attribute name="PROD_ID" value="CONN-11563" x="54.61" y="52.07" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP54" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="57.15">
+<element name="JP54" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="57.15">
 <attribute name="PROD_ID" value="CONN-11563" x="26.67" y="41.91" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP55" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="54.61">
+<element name="JP55" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="54.61">
 <attribute name="PROD_ID" value="CONN-11563" x="54.61" y="39.37" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP56" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="52.07">
+<element name="JP56" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="52.07">
 <attribute name="PROD_ID" value="CONN-11563" x="26.67" y="29.21" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP57" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="49.53">
+<element name="JP57" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="49.53">
 <attribute name="PROD_ID" value="CONN-11563" x="54.61" y="26.67" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP58" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="46.99">
+<element name="JP58" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="46.99">
 <attribute name="PROD_ID" value="CONN-11563" x="26.67" y="16.51" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP59" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="44.45">
+<element name="JP59" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="44.45">
 <attribute name="PROD_ID" value="CONN-11563" x="54.61" y="13.97" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP60" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="41.91">
+<element name="JP60" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="41.91">
 <attribute name="PROD_ID" value="CONN-11563" x="26.67" y="3.81" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP61" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="39.37">
+<element name="JP61" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="39.37">
 <attribute name="PROD_ID" value="CONN-11563" x="54.61" y="1.27" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP62" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="36.83">
+<element name="JP62" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="36.83">
 <attribute name="PROD_ID" value="CONN-11563" x="26.67" y="-8.89" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP63" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="34.29">
+<element name="JP63" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="34.29">
 <attribute name="PROD_ID" value="CONN-11563" x="54.61" y="-11.43" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP64" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="31.75">
+<element name="JP64" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="31.75">
 <attribute name="PROD_ID" value="CONN-11563" x="26.67" y="-21.59" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP65" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="29.21">
+<element name="JP65" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="29.21">
 <attribute name="PROD_ID" value="CONN-11563" x="54.61" y="-24.13" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP66" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="26.67">
+<element name="JP66" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="26.67">
 <attribute name="PROD_ID" value="CONN-11563" x="26.67" y="-34.29" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP67" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="24.13">
+<element name="JP67" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="24.13">
 <attribute name="PROD_ID" value="CONN-11563" x="54.61" y="-36.83" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP68" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="21.59">
+<element name="JP68" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="21.59">
 <attribute name="PROD_ID" value="CONN-11563" x="26.67" y="-46.99" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP69" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="19.05">
+<element name="JP69" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="19.05">
 <attribute name="PROD_ID" value="CONN-11563" x="54.61" y="-49.53" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP70" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="16.51">
+<element name="JP70" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="16.51">
 <attribute name="PROD_ID" value="CONN-11563" x="26.67" y="-59.69" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP71" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="13.97">
+<element name="JP71" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="13.97">
 <attribute name="PROD_ID" value="CONN-11563" x="54.61" y="-62.23" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP72" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="11.43">
+<element name="JP72" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="11.43">
 <attribute name="PROD_ID" value="CONN-11563" x="26.67" y="-72.39" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP73" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="8.89">
+<element name="JP73" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="8.89">
 <attribute name="PROD_ID" value="CONN-11563" x="54.61" y="-74.93" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP74" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="6.35">
+<element name="JP74" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="6.35">
 <attribute name="PROD_ID" value="CONN-11563" x="26.67" y="-85.09" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP75" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="54.61" y="3.81">
+<element name="JP75" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="54.61" y="3.81">
 <attribute name="PROD_ID" value="CONN-11563" x="54.61" y="-87.63" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP76" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="64.77">
+<element name="JP76" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="64.77">
 <attribute name="PROD_ID" value="CONN-11563" x="80.01" y="64.77" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP77" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="62.23">
+<element name="JP77" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="62.23">
 <attribute name="PROD_ID" value="CONN-11563" x="53.34" y="54.61" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP78" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="59.69">
+<element name="JP78" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="59.69">
 <attribute name="PROD_ID" value="CONN-11563" x="80.01" y="52.07" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP79" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="57.15">
+<element name="JP79" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="57.15">
 <attribute name="PROD_ID" value="CONN-11563" x="53.34" y="41.91" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP80" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="54.61">
+<element name="JP80" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="54.61">
 <attribute name="PROD_ID" value="CONN-11563" x="80.01" y="39.37" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP81" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="52.07">
+<element name="JP81" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="52.07">
 <attribute name="PROD_ID" value="CONN-11563" x="53.34" y="29.21" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP82" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="49.53">
+<element name="JP82" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="49.53">
 <attribute name="PROD_ID" value="CONN-11563" x="80.01" y="26.67" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP83" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="46.99">
+<element name="JP83" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="46.99">
 <attribute name="PROD_ID" value="CONN-11563" x="53.34" y="16.51" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP84" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="44.45">
+<element name="JP84" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="44.45">
 <attribute name="PROD_ID" value="CONN-11563" x="80.01" y="13.97" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP85" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="41.91">
+<element name="JP85" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="41.91">
 <attribute name="PROD_ID" value="CONN-11563" x="53.34" y="3.81" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP86" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="39.37">
+<element name="JP86" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="39.37">
 <attribute name="PROD_ID" value="CONN-11563" x="80.01" y="1.27" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP87" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="36.83">
+<element name="JP87" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="36.83">
 <attribute name="PROD_ID" value="CONN-11563" x="53.34" y="-8.89" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP88" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="34.29">
+<element name="JP88" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="34.29">
 <attribute name="PROD_ID" value="CONN-11563" x="80.01" y="-11.43" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP89" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="31.75">
+<element name="JP89" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="31.75">
 <attribute name="PROD_ID" value="CONN-11563" x="53.34" y="-21.59" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP90" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="29.21">
+<element name="JP90" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="29.21">
 <attribute name="PROD_ID" value="CONN-11563" x="80.01" y="-24.13" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP91" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="26.67">
+<element name="JP91" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="26.67">
 <attribute name="PROD_ID" value="CONN-11563" x="53.34" y="-34.29" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP92" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="24.13">
+<element name="JP92" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="24.13">
 <attribute name="PROD_ID" value="CONN-11563" x="80.01" y="-36.83" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP93" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="21.59">
+<element name="JP93" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="21.59">
 <attribute name="PROD_ID" value="CONN-11563" x="53.34" y="-46.99" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP94" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="19.05">
+<element name="JP94" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="19.05">
 <attribute name="PROD_ID" value="CONN-11563" x="80.01" y="-49.53" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP95" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="16.51">
+<element name="JP95" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="16.51">
 <attribute name="PROD_ID" value="CONN-11563" x="53.34" y="-59.69" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP96" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="13.97">
+<element name="JP96" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="13.97">
 <attribute name="PROD_ID" value="CONN-11563" x="80.01" y="-62.23" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP97" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="11.43">
+<element name="JP97" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="11.43">
 <attribute name="PROD_ID" value="CONN-11563" x="53.34" y="-72.39" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP98" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="8.89">
+<element name="JP98" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="8.89">
 <attribute name="PROD_ID" value="CONN-11563" x="80.01" y="-74.93" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP99" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="6.35">
+<element name="JP99" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="6.35">
 <attribute name="PROD_ID" value="CONN-11563" x="53.34" y="-85.09" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP100" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="80.01" y="3.81">
+<element name="JP100" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="80.01" y="3.81">
 <attribute name="PROD_ID" value="CONN-11563" x="80.01" y="-87.63" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP101" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="64.77">
+<element name="JP101" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="64.77">
 <attribute name="PROD_ID" value="CONN-11563" x="105.41" y="64.77" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP102" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="62.23">
+<element name="JP102" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="62.23">
 <attribute name="PROD_ID" value="CONN-11563" x="78.74" y="54.61" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP103" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="59.69">
+<element name="JP103" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="59.69">
 <attribute name="PROD_ID" value="CONN-11563" x="105.41" y="52.07" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP104" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="57.15">
+<element name="JP104" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="57.15">
 <attribute name="PROD_ID" value="CONN-11563" x="78.74" y="41.91" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP105" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="54.61">
+<element name="JP105" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="54.61">
 <attribute name="PROD_ID" value="CONN-11563" x="105.41" y="39.37" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP106" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="52.07">
+<element name="JP106" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="52.07">
 <attribute name="PROD_ID" value="CONN-11563" x="78.74" y="29.21" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP107" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="49.53">
+<element name="JP107" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="49.53">
 <attribute name="PROD_ID" value="CONN-11563" x="105.41" y="26.67" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP108" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="46.99">
+<element name="JP108" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="46.99">
 <attribute name="PROD_ID" value="CONN-11563" x="78.74" y="16.51" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP109" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="44.45">
+<element name="JP109" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="44.45">
 <attribute name="PROD_ID" value="CONN-11563" x="105.41" y="13.97" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP110" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="41.91">
+<element name="JP110" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="41.91">
 <attribute name="PROD_ID" value="CONN-11563" x="78.74" y="3.81" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP111" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="39.37">
+<element name="JP111" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="39.37">
 <attribute name="PROD_ID" value="CONN-11563" x="105.41" y="1.27" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP112" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="36.83">
+<element name="JP112" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="36.83">
 <attribute name="PROD_ID" value="CONN-11563" x="78.74" y="-8.89" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP113" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="34.29">
+<element name="JP113" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="34.29">
 <attribute name="PROD_ID" value="CONN-11563" x="105.41" y="-11.43" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP114" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="31.75">
+<element name="JP114" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="31.75">
 <attribute name="PROD_ID" value="CONN-11563" x="78.74" y="-21.59" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP115" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="29.21">
+<element name="JP115" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="29.21">
 <attribute name="PROD_ID" value="CONN-11563" x="105.41" y="-24.13" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP116" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="26.67">
+<element name="JP116" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="26.67">
 <attribute name="PROD_ID" value="CONN-11563" x="78.74" y="-34.29" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP117" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="24.13">
+<element name="JP117" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="24.13">
 <attribute name="PROD_ID" value="CONN-11563" x="105.41" y="-36.83" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP118" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="21.59">
+<element name="JP118" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="21.59">
 <attribute name="PROD_ID" value="CONN-11563" x="78.74" y="-46.99" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP119" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="19.05">
+<element name="JP119" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="19.05">
 <attribute name="PROD_ID" value="CONN-11563" x="105.41" y="-49.53" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP120" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="16.51">
+<element name="JP120" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="16.51">
 <attribute name="PROD_ID" value="CONN-11563" x="78.74" y="-59.69" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP121" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="13.97">
+<element name="JP121" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="13.97">
 <attribute name="PROD_ID" value="CONN-11563" x="105.41" y="-62.23" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP122" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="11.43">
+<element name="JP122" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="11.43">
 <attribute name="PROD_ID" value="CONN-11563" x="78.74" y="-72.39" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP123" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="8.89">
+<element name="JP123" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="8.89">
 <attribute name="PROD_ID" value="CONN-11563" x="105.41" y="-74.93" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP124" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="6.35">
+<element name="JP124" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="6.35">
 <attribute name="PROD_ID" value="CONN-11563" x="78.74" y="-85.09" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="JP125" library="SparkFun-Connectors" package="1X10_NO_SILK" value="M10NO_SILK_PTH_FEMALE" x="105.41" y="3.81">
+<element name="JP125" library="SparkFun-Connectors" package="1X10_NO_SILK" value="" x="105.41" y="3.81">
 <attribute name="PROD_ID" value="CONN-11563" x="105.41" y="-87.63" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
 <element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="22.86" y="-15.24"/>
